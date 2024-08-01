@@ -6,12 +6,11 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 import altair as alt
-from dotenv import dotenv_values
 
 from jira_utils import JiraIssue, download_jira_issues
 
 ######### Variaveis de ambiente
-config = dotenv_values(".env")
+config = os.environ
 
 ########## Variáveis
 CUSTOM_COLORS = {'Pronto': '#9FC131', 'Em andamento': '#042940', 'Aberto': '#005C53'}
